@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Travel Tips for Goa</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f3e5f5;
+            color: #333333;
+        }
+
+        /* Main heading */
+        h1 {
+            text-align: center;
+            color: #6a1b9a;
+            background-color: #e1bee7;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 10px;
+        }
+
+        .intro {
+            text-align: center;
+            font-size: 17px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        /* Goa banner */
+        .banner {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 12px;
+            display: block;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #6a1b9a;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        /* Flexbox layout */
+        .tips-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        /* Individual tip cards */
+        .tip-card {
+            background-color: white;
+            width: 280px;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #ce93d8;
+            box-shadow: 0 4px 10px #d1c4e9;
+            transition: transform 0.3s;
+        }
+
+        .tip-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .tip-card h3 {
+            color: #7b1fa2;
+            margin-top: 0;
+        }
+
+        .tip-card p {
+            line-height: 1.7;
+        }
+
+        .icon {
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+
+        /* Highlight section */
+        .reminder {
+            background-color: #ede7f6;
+            border-left: 6px solid #8e24aa;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 8px;
+            line-height: 1.7;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background-color: #6a1b9a;
+            color: white;
+            padding: 18px;
+            margin-top: 30px;
+            border-radius: 10px;
+        }
+
+        /* Mobile-friendly layout */
+        @media (max-width: 600px) {
+            body {
+                padding: 12px;
+            }
+
+            .tip-card {
+                width: 100%;
+            }
+
+            .banner {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Page heading -->
+    <header>
+        <h1>Travel Tips for Goa</h1>
+
+        <p class="intro">
+            <strong>Plan Smart. Travel Safe. Enjoy Goa!</strong><br>
+            Follow these simple tips to make your Goa holiday
+            comfortable, safe and memorable.
+        </p>
+    </header>
+
+    <!-- Goa image -->
+    <img
+        class="banner"
+        src="goa.jpeg"
+        alt="Beautiful tropical beach for a Goa holiday">
+
+    <main>
+
+        <section>
+            <h2>Essential Travel Tips</h2>
+
+            <div class="tips-container">
+
+                <!-- Tip 1 -->
+                <article class="tip-card">
+                    <div class="icon">☀️</div>
+                    <h3>1. Pack Smart</h3>
+                    <p>
+                        Carry sunscreen, sunglasses, comfortable
+                        cotton clothes, footwear and a hat to
+                        enjoy Goa's sunny weather.
+                    </p>
+                </article>
+
+                <!-- Tip 2 -->
+                <article class="tip-card">
+                    <div class="icon">🌦️</div>
+                    <h3>2. Check the Weather</h3>
+                    <p>
+                        Check the forecast before planning beach
+                        trips and outdoor activities. Follow
+                        weather warnings during the monsoon.
+                    </p>
+                </article>
+
+                <!-- Tip 3 -->
+                <article class="tip-card">
+                    <div class="icon">🏨</div>
+                    <h3>3. Book in Advance</h3>
+                    <p>
+                        Reserve hotels, transport and popular
+                        activities early, especially during
+                        weekends and holiday seasons.
+                    </p>
+                </article>
+
+                <!-- Tip 4 -->
+                <article class="tip-card">
+                    <div class="icon">🏖️</div>
+                    <h3>4. Stay Beach Safe</h3>
+                    <p>
+                        Follow lifeguard instructions, observe
+                        warning flags and avoid swimming in
+                        rough seas or restricted areas.
+                    </p>
+                </article>
+
+                <!-- Tip 5 -->
+                <article class="tip-card">
+                    <div class="icon">🌴</div>
+                    <h3>5. Respect Local Culture</h3>
+                    <p>
+                        Respect local customs, dress appropriately
+                        at religious sites and avoid littering
+                        beaches and public places.
+                    </p>
+                </article>
+
+                <!-- Tip 6 -->
+                <article class="tip-card">
+                    <div class="icon">💧</div>
+                    <h3>6. Stay Hydrated</h3>
+                    <p>
+                        Carry drinking water during sightseeing.
+                        Drink water regularly, especially during
+                        hot afternoons and outdoor activities.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Important reminder -->
+        <section class="reminder">
+            <h3>Travel Reminder</h3>
+            <p>
+                Keep your identification documents and emergency
+                contacts accessible. Use licensed transport,
+                protect your belongings and check local guidance
+                before trying adventure activities.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            &copy; 2026 Goa Travel Agency
+        </p>
+        <p>Explore More. Worry Less. Enjoy Goa!</p>
+    </footer>
+
+</body>
+</html>

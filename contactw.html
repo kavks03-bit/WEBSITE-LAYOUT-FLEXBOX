@@ -1,0 +1,299 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us - Goa Travel Agency</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #e8eaf6;
+            color: #333333;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            background-color: #c5cae9;
+            color: #283593;
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        header p {
+            line-height: 1.6;
+        }
+
+        /* Banner image */
+        .banner {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-top: 20px;
+            display: block;
+        }
+
+        h2 {
+            text-align: center;
+            color: #283593;
+            margin: 30px 0 20px;
+        }
+
+        /* Contact information cards */
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .contact-card {
+            flex: 1 1 220px;
+            max-width: 350px;
+            padding: 20px;
+            text-align: center;
+            background-color: white;
+            border: 1px solid #c5cae9;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px #c5cae9;
+        }
+
+        .contact-card h3 {
+            color: #3949ab;
+        }
+
+        .contact-card p {
+            line-height: 1.6;
+            overflow-wrap: anywhere;
+        }
+
+        .icon {
+            font-size: 35px;
+        }
+
+        /* Contact form */
+        .form-container {
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 25px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px #c5cae9;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #283593;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            border: 1px solid #9fa8da;
+            border-radius: 6px;
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 20px;
+            padding: 13px;
+            background-color: #3949ab;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1a237e;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #283593;
+            color: white;
+            text-align: center;
+            padding: 18px;
+            margin-top: 30px;
+            border-radius: 10px;
+        }
+
+        /* Mobile responsive design */
+        @media (max-width: 600px) {
+            body {
+                padding: 12px;
+            }
+
+            .banner {
+                height: 200px;
+            }
+
+            .form-container {
+                padding: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Contact Us</h1>
+
+        <p>
+            Want to plan your Goa trip?
+            We are here to help you!
+        </p>
+
+        <p>
+            Contact Goa Travel Agency and start planning
+            your wonderful holiday.
+        </p>
+    </header>
+
+    <!-- Goa banner -->
+    <img
+        class="banner"
+        src="goa.jpeg"
+        alt="Beautiful beach destination in Goa">
+
+    <main>
+
+        <!-- Contact information -->
+        <section>
+            <h2>Get in Touch</h2>
+
+            <div class="contact-container">
+
+                <article class="contact-card">
+                    <div class="icon">📧</div>
+                    <h3>Email Us</h3>
+                    <p>
+                        travel@example.com
+                    </p>
+                </article>
+
+                <article class="contact-card">
+                    <div class="icon">📍</div>
+                    <h3>Our Destination</h3>
+                    <p>
+                        Goa, India
+                    </p>
+                </article>
+
+                <article class="contact-card">
+                    <div class="icon">🌴</div>
+                    <h3>Travel With Us</h3>
+                    <p>
+                        Explore beautiful beaches, famous
+                        tourist places and delicious Goan food.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Contact form -->
+        <section class="form-container">
+            <h2>Plan Your Goa Trip</h2>
+
+            <form action="#" method="get">
+
+                <label for="name">Full Name:</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your full name"
+                    required>
+
+                <label for="email">Email Address:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required>
+
+                <label for="phone">Mobile Number:</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Enter your mobile number">
+
+                <label for="date">Preferred Travel Date:</label>
+                <input
+                    type="date"
+                    id="date"
+                    name="date">
+
+                <label for="package">Choose Your Trip:</label>
+                <select id="package" name="package" required>
+                    <option value="">Select a package</option>
+                    <option value="beach">Beach Holiday</option>
+                    <option value="adventure">Adventure Trip</option>
+                    <option value="family">Family Vacation</option>
+                </select>
+
+                <label for="message">Your Message:</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    placeholder="Tell us about your travel plans"></textarea>
+
+                <button type="submit">Submit Enquiry</button>
+
+<p id="successMessage" style="display:none; color:green;
+   text-align:center; font-weight:bold;">
+    Enquiry Submitted Successfully!
+    Thank you for contacting Goa Travel Agency.
+</p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Goa Travel Agency</p>
+        <p>Explore Goa and Make Wonderful Travel Memories!</p>
+    </footer>
+
+<script>
+    const form = document.querySelector("form");
+    const message = document.getElementById("successMessage");
+
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        message.style.display = "block";
+
+        form.reset();
+    });
+</script>
+
+</body>
+</html>
